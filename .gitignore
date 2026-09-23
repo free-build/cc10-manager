@@ -1,0 +1,50 @@
+# Build output
+build/
+launcher-compat/build/
+*.class
+*.dex
+*.jar
+*.idsig
+
+# IDE and OS files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Never publish signing keys or device secrets
+*.pk8
+*.pem
+*.jks
+*.keystore
+*.p12
+adbkey
+adbkey.pub
+
+# Device dumps and databases
+*.db
+*.db-journal
+*.img
+*.bin
+*.log
+*.xml.bak
+
+# Reverse-engineering and temporary material
+smartapp-*/
+*-decompiled*/
+*-smali*/
+*-dex*/
+tools/
+tmp/
+temp/
+
+# Screenshots and local test captures
+*.png
+*.jpg
+*.jpeg
+*.bmp
+
+# Keep verified release APKs
+*.apk
+!release/*.apk
